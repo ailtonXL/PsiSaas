@@ -1,0 +1,1 @@
+{% extends 'base.html' %}{% block content %}<section class="login-card"><div class="brand">◒ PsiSaas</div><h1>{{ title }}</h1><p>{{ message }}</p>{% if button %}<form method="post"><input type="hidden" name="csrf" value="{{ session.csrf }}"><button>{{ button }}</button></form>{% endif %}</section>{% endblock %}
